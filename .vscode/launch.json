@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "program": "${workspaceFolder}/build/index.js",
+      "env": {
+        "TYPEORM_ENTITIES": "build/entity/**/*.js",
+        "TYPEORM_MIGRATIONS": "build/migration/**/*.js",
+        "TYPEORM_ENTITIES_DIR": "build/entity",
+        "TYPEORM_MIGRATIONS_DIR": "build/migration"
+      },
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outFiles": [
+        "${workspaceFolder}/build/**/*.js"
+      ]
+    }
+  ]
+}

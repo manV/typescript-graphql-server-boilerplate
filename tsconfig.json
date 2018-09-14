@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "lib": ["es5", "es6", "esnext.asynciterable", "es2016"],
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./build",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "removeComments": true,
+    "strict": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": false,
+    "typeRoots": ["src/types", "node_modules/@types"]
+  }
+}
